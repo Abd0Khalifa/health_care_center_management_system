@@ -173,5 +173,38 @@ namespace health_care_center_management_system
             }
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Patients Obj = new Patients();
+            Obj.Show();
+            Obj.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Tests Obj = new Tests();
+            Obj.Show();
+            Obj.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Diagnosis Obj = new Diagnosis();
+            Obj.Show();
+            Obj.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            Obj.Hide();
+        }
     }
 }

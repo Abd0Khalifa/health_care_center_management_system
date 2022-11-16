@@ -16,7 +16,7 @@ namespace health_care_center_management_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Diagnosis());
+            Application.Run(new Patients());
         }
     }
 }

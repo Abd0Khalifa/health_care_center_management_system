@@ -35,11 +35,11 @@ namespace health_care_center_management_system
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UserNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.PasswordTb = new System.Windows.Forms.TextBox();
+            this.LoginBtn = new System.Windows.Forms.Button();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -84,12 +84,12 @@ namespace health_care_center_management_system
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox1
+            // UserNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(412, 189);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 29);
-            this.textBox1.TabIndex = 3;
+            this.UserNameTb.Location = new System.Drawing.Point(412, 189);
+            this.UserNameTb.Name = "UserNameTb";
+            this.UserNameTb.Size = new System.Drawing.Size(231, 29);
+            this.UserNameTb.TabIndex = 3;
             // 
             // label2
             // 
@@ -107,34 +107,35 @@ namespace health_care_center_management_system
             this.label3.ForeColor = System.Drawing.Color.Orange;
             this.label3.Location = new System.Drawing.Point(408, 233);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 22);
+            this.label3.Size = new System.Drawing.Size(74, 22);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Username";
+            this.label3.Text = "Password";
             // 
-            // textBox2
+            // PasswordTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(412, 271);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 29);
-            this.textBox2.TabIndex = 5;
+            this.PasswordTb.Location = new System.Drawing.Point(412, 271);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(231, 29);
+            this.PasswordTb.TabIndex = 5;
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 14F);
-            this.button1.Location = new System.Drawing.Point(412, 317);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 34);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LoginBtn.BackColor = System.Drawing.Color.Orange;
+            this.LoginBtn.FlatAppearance.BorderSize = 0;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Palatino Linotype", 14F);
+            this.LoginBtn.Location = new System.Drawing.Point(412, 317);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(231, 34);
+            this.LoginBtn.TabIndex = 7;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 15;
-            this.guna2Elipse2.TargetControl = this.button1;
+            this.guna2Elipse2.TargetControl = this.LoginBtn;
             // 
             // label4
             // 
@@ -164,11 +165,11 @@ namespace health_care_center_management_system
             this.ClientSize = new System.Drawing.Size(744, 398);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.UserNameTb);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -192,10 +193,10 @@ namespace health_care_center_management_system
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox UserNameTb;
+        private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox PasswordTb;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
