@@ -31,11 +31,11 @@ namespace health_care_center_management_system
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diagnosis));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DiagList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -61,6 +61,8 @@ namespace health_care_center_management_system
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.TestCb = new System.Windows.Forms.ComboBox();
+            this.PatientCb = new System.Windows.Forms.ComboBox();
             this.DiaDateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.CostTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -69,10 +71,8 @@ namespace health_care_center_management_system
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.PatientCb = new System.Windows.Forms.ComboBox();
-            this.TestCb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiagList)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -95,65 +95,67 @@ namespace health_care_center_management_system
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
             // 
-            // guna2DataGridView1
+            // DiagList
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(20, 60);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(877, 279);
-            this.guna2DataGridView1.TabIndex = 0;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DiagList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DiagList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DiagList.ColumnHeadersHeight = 4;
+            this.DiagList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DiagList.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DiagList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DiagList.Location = new System.Drawing.Point(20, 60);
+            this.DiagList.Name = "DiagList";
+            this.DiagList.RowHeadersVisible = false;
+            this.DiagList.Size = new System.Drawing.Size(877, 279);
+            this.DiagList.TabIndex = 0;
+            this.DiagList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DiagList.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DiagList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DiagList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DiagList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DiagList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DiagList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DiagList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DiagList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DiagList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiagList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DiagList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DiagList.ThemeStyle.HeaderStyle.Height = 4;
+            this.DiagList.ThemeStyle.ReadOnly = false;
+            this.DiagList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DiagList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DiagList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiagList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DiagList.ThemeStyle.RowsStyle.Height = 22;
+            this.DiagList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DiagList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DiagList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.label13);
-            this.panel4.Controls.Add(this.guna2DataGridView1);
+            this.panel4.Controls.Add(this.DiagList);
             this.panel4.Location = new System.Drawing.Point(21, 263);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(904, 360);
             this.panel4.TabIndex = 1;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label13
             // 
@@ -404,6 +406,23 @@ namespace health_care_center_management_system
             this.panel3.Size = new System.Drawing.Size(904, 217);
             this.panel3.TabIndex = 0;
             // 
+            // TestCb
+            // 
+            this.TestCb.FormattingEnabled = true;
+            this.TestCb.Location = new System.Drawing.Point(20, 155);
+            this.TestCb.Name = "TestCb";
+            this.TestCb.Size = new System.Drawing.Size(231, 30);
+            this.TestCb.TabIndex = 22;
+            this.TestCb.SelectionChangeCommitted += new System.EventHandler(this.TestCb_SelectionChangeCommitted);
+            // 
+            // PatientCb
+            // 
+            this.PatientCb.FormattingEnabled = true;
+            this.PatientCb.Location = new System.Drawing.Point(20, 79);
+            this.PatientCb.Name = "PatientCb";
+            this.PatientCb.Size = new System.Drawing.Size(231, 30);
+            this.PatientCb.TabIndex = 21;
+            // 
             // DiaDateTb
             // 
             this.DiaDateTb.Checked = true;
@@ -484,23 +503,6 @@ namespace health_care_center_management_system
             this.label5.TabIndex = 10;
             this.label5.Text = "Health Care Management System";
             // 
-            // PatientCb
-            // 
-            this.PatientCb.FormattingEnabled = true;
-            this.PatientCb.Location = new System.Drawing.Point(20, 79);
-            this.PatientCb.Name = "PatientCb";
-            this.PatientCb.Size = new System.Drawing.Size(231, 30);
-            this.PatientCb.TabIndex = 21;
-            // 
-            // TestCb
-            // 
-            this.TestCb.FormattingEnabled = true;
-            this.TestCb.Location = new System.Drawing.Point(20, 155);
-            this.TestCb.Name = "TestCb";
-            this.TestCb.Size = new System.Drawing.Size(231, 30);
-            this.TestCb.TabIndex = 22;
-            this.TestCb.SelectionChangeCommitted += new System.EventHandler(this.TestCb_SelectionChangeCommitted);
-            // 
             // Diagnosis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
@@ -519,7 +521,7 @@ namespace health_care_center_management_system
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diagnosis";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiagList)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -541,7 +543,7 @@ namespace health_care_center_management_system
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox7;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView DiagList;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
