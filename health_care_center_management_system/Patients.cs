@@ -72,6 +72,7 @@ namespace health_care_center_management_system
                 Query = string.Format(Query, Patient, Gender, BDate, Phone, Address,Key);
                 Con.SetData(Query);
                 ShowPatients();
+                Clear(); 
                 MessageBox.Show("Patient Updated!!!");
 
             }
@@ -110,6 +111,7 @@ namespace health_care_center_management_system
                 Query = string.Format(Query, Patient, Gender, BDate, Phone, Address);
                 Con.SetData(Query);
                 ShowPatients();
+                Clear();
                 MessageBox.Show("Patient Added!!!");
 
             }
@@ -131,7 +133,14 @@ namespace health_care_center_management_system
                 Key = Convert.ToInt32(PatientsList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+        private void Clear()
+        {
+            PatNameTb.Text = "";
+            GenCb.SelectedIndex = -1;
+            PatPhoneTb.Text = "";
+            PatAddTb.Text = "";
 
+        }
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
             if (Key == 0)
@@ -146,7 +155,8 @@ namespace health_care_center_management_system
                 Query = string.Format(Query, Key);
                 Con.SetData(Query);
                 ShowPatients();
-                MessageBox.Show("Patient Updated!!!");
+                Clear();
+                MessageBox.Show("Patient Deleted!!!");
 
             }
         }
