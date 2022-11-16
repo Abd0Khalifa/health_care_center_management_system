@@ -13,3 +13,5 @@ C:\Users\defds\source\repos\health_care_center_management_system\health_care_cen
 C:\Users\defds\source\repos\health_care_center_management_system\health_care_center_management_system\obj\Debug\health_care_center_management_system.Patients.resources
 C:\Users\defds\source\repos\health_care_center_management_system\health_care_center_management_system\obj\Debug\health_care_center_management_system.Tests.resources
 C:\Users\defds\source\repos\health_care_center_management_system\health_care_center_management_system\obj\Debug\health_care_center_management_system.Diagnosis.resources
+C:\Users\defds\source\repos\health_care_center_management_system\health_care_center_management_system\bin\Debug\System.Data.SqlClient.dll
+C:\Users\defds\source\repos\health_care_center_management_system\health_care_center_management_system\bin\Debug\System.Data.SqlClient.xml
