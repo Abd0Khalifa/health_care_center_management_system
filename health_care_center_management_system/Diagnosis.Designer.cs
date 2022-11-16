@@ -31,9 +31,9 @@ namespace health_care_center_management_system
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diagnosis));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -48,7 +48,6 @@ namespace health_care_center_management_system
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -71,6 +70,7 @@ namespace health_care_center_management_system
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -97,26 +97,26 @@ namespace health_care_center_management_system
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(20, 60);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -162,13 +162,14 @@ namespace health_care_center_management_system
             this.label13.ForeColor = System.Drawing.Color.LimeGreen;
             this.label13.Location = new System.Drawing.Point(395, 16);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(113, 26);
+            this.label13.Size = new System.Drawing.Size(129, 26);
             this.label13.TabIndex = 15;
-            this.label13.Text = "Patients List";
+            this.label13.Text = "Diagnosis List";
             // 
             // guna2Elipse4
             // 
             this.guna2Elipse4.BorderRadius = 15;
+            this.guna2Elipse4.TargetControl = this;
             // 
             // label12
             // 
@@ -252,17 +253,9 @@ namespace health_care_center_management_system
             this.label11.ForeColor = System.Drawing.Color.LimeGreen;
             this.label11.Location = new System.Drawing.Point(530, 41);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 22);
+            this.label11.Size = new System.Drawing.Size(112, 22);
             this.label11.TabIndex = 16;
-            this.label11.Text = "Patient Address";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(534, 79);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(231, 106);
-            this.textBox5.TabIndex = 15;
+            this.label11.Text = "Diagnosis Date";
             // 
             // label9
             // 
@@ -270,9 +263,9 @@ namespace health_care_center_management_system
             this.label9.ForeColor = System.Drawing.Color.LimeGreen;
             this.label9.Location = new System.Drawing.Point(275, 118);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 22);
+            this.label9.Size = new System.Drawing.Size(40, 22);
             this.label9.TabIndex = 14;
-            this.label9.Text = "Patient Phone";
+            this.label9.Text = "Cost";
             // 
             // pictureBox5
             // 
@@ -398,11 +391,11 @@ namespace health_care_center_management_system
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.guna2DateTimePicker1);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.label10);
@@ -430,9 +423,9 @@ namespace health_care_center_management_system
             this.label10.ForeColor = System.Drawing.Color.LimeGreen;
             this.label10.Location = new System.Drawing.Point(275, 41);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(148, 22);
+            this.label10.Size = new System.Drawing.Size(51, 22);
             this.label10.TabIndex = 12;
-            this.label10.Text = "Patient Date of Birth";
+            this.label10.Text = "Result";
             // 
             // textBox4
             // 
@@ -447,9 +440,9 @@ namespace health_care_center_management_system
             this.label8.ForeColor = System.Drawing.Color.LimeGreen;
             this.label8.Location = new System.Drawing.Point(16, 118);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 22);
+            this.label8.Size = new System.Drawing.Size(36, 22);
             this.label8.TabIndex = 10;
-            this.label8.Text = "Patient Gender";
+            this.label8.Text = "Test";
             // 
             // textBox2
             // 
@@ -464,9 +457,9 @@ namespace health_care_center_management_system
             this.label7.ForeColor = System.Drawing.Color.LimeGreen;
             this.label7.Location = new System.Drawing.Point(16, 41);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 22);
+            this.label7.Size = new System.Drawing.Size(57, 22);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Patient Name";
+            this.label7.Text = "Patient";
             // 
             // label6
             // 
@@ -475,9 +468,9 @@ namespace health_care_center_management_system
             this.label6.ForeColor = System.Drawing.Color.Orange;
             this.label6.Location = new System.Drawing.Point(15, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 28);
+            this.label6.Size = new System.Drawing.Size(195, 28);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Manage Patients";
+            this.label6.Text = "Manage Diagnosis";
             // 
             // label5
             // 
@@ -489,6 +482,20 @@ namespace health_care_center_management_system
             this.label5.Size = new System.Drawing.Size(342, 28);
             this.label5.TabIndex = 10;
             this.label5.Text = "Health Care Management System";
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.Orange;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(516, 72);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(2022, 11, 16, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.TabIndex = 20;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 11, 16, 16, 32, 5, 818);
             // 
             // Diagnosis
             // 
@@ -543,7 +550,6 @@ namespace health_care_center_management_system
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel1;
@@ -566,5 +572,6 @@ namespace health_care_center_management_system
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }
