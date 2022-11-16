@@ -52,6 +52,8 @@ namespace health_care_center_management_system
             this.label13 = new System.Windows.Forms.Label();
             this.PatientsList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.DOBTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.GenCb = new System.Windows.Forms.ComboBox();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
@@ -69,8 +71,6 @@ namespace health_care_center_management_system
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.GenCb = new System.Windows.Forms.ComboBox();
-            this.DOBTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -330,6 +330,31 @@ namespace health_care_center_management_system
             this.panel3.Size = new System.Drawing.Size(904, 217);
             this.panel3.TabIndex = 0;
             // 
+            // DOBTb
+            // 
+            this.DOBTb.Checked = true;
+            this.DOBTb.FillColor = System.Drawing.Color.Orange;
+            this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOBTb.Location = new System.Drawing.Point(279, 75);
+            this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DOBTb.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
+            this.DOBTb.Name = "DOBTb";
+            this.DOBTb.Size = new System.Drawing.Size(229, 36);
+            this.DOBTb.TabIndex = 21;
+            this.DOBTb.Value = new System.DateTime(2022, 11, 16, 16, 32, 5, 818);
+            // 
+            // GenCb
+            // 
+            this.GenCb.FormattingEnabled = true;
+            this.GenCb.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.GenCb.Location = new System.Drawing.Point(20, 156);
+            this.GenCb.Name = "GenCb";
+            this.GenCb.Size = new System.Drawing.Size(231, 30);
+            this.GenCb.TabIndex = 20;
+            // 
             // DeleteBtn
             // 
             this.DeleteBtn.BackColor = System.Drawing.Color.Peru;
@@ -343,6 +368,7 @@ namespace health_care_center_management_system
             this.DeleteBtn.TabIndex = 19;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // SaveBtn
             // 
@@ -372,7 +398,7 @@ namespace health_care_center_management_system
             this.EditBtn.TabIndex = 17;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
-            this.EditBtn.Click += new System.EventHandler(this.Button1_Click);
+            this.EditBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label11
             // 
@@ -487,31 +513,6 @@ namespace health_care_center_management_system
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 7;
             this.pictureBox7.TabStop = false;
-            // 
-            // GenCb
-            // 
-            this.GenCb.FormattingEnabled = true;
-            this.GenCb.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.GenCb.Location = new System.Drawing.Point(20, 156);
-            this.GenCb.Name = "GenCb";
-            this.GenCb.Size = new System.Drawing.Size(231, 30);
-            this.GenCb.TabIndex = 20;
-            // 
-            // DOBTb
-            // 
-            this.DOBTb.Checked = true;
-            this.DOBTb.FillColor = System.Drawing.Color.Orange;
-            this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DOBTb.Location = new System.Drawing.Point(279, 75);
-            this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DOBTb.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
-            this.DOBTb.Name = "DOBTb";
-            this.DOBTb.Size = new System.Drawing.Size(229, 36);
-            this.DOBTb.TabIndex = 21;
-            this.DOBTb.Value = new System.DateTime(2022, 11, 16, 16, 32, 5, 818);
             // 
             // Patients
             // 

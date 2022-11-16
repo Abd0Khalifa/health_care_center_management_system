@@ -54,7 +54,7 @@ namespace health_care_center_management_system
 
         }
 
-        private void EditBtn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if (PatNameTb.Text == "" || PatPhoneTb.Text == "" || PatAddTb.Text == "" || GenCb.SelectedIndex == -1)
             {
@@ -69,7 +69,7 @@ namespace health_care_center_management_system
                 string Phone = PatPhoneTb.Text;
                 string Address = PatAddTb.Text;
                 string Query = "Update PatientTbl set PatName = '{0}', PatGen= '{1}',PatDOB = '{2}', PatPhone = '{3}', PatAdd = '{4}' Where PatCode = '{5}";
-                Query = string.Format(Query, Patient, Gender, BDate, Phone, Address);
+                Query = string.Format(Query, Patient, Gender, BDate, Phone, Address,Key);
                 Con.SetData(Query);
                 ShowPatients();
                 MessageBox.Show("Patient Updated!!!");
@@ -129,6 +129,25 @@ namespace health_care_center_management_system
             else
             {
                 Key = Convert.ToInt32(PatientsList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select a Patient!!!");
+
+            }
+            else
+            {
+                
+                string Query = "Delete From  PatientTbl Where PatCode = {0}";
+                Query = string.Format(Query, Key);
+                Con.SetData(Query);
+                ShowPatients();
+                MessageBox.Show("Patient Updated!!!");
+
             }
         }
     }
