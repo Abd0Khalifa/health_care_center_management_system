@@ -98,14 +98,79 @@ namespace health_care_center_management_system
             GetCost();
        
         }
+        int Key = 0;
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            DiaDateTb.Text = DiagList.SelectedRows[0].Cells[1].Value.ToString();
+            PatientCb.SelectedItem = DiagList.SelectedRows[0].Cells[2].Value.ToString();
+            TestCb.Text = DiagList.SelectedRows[0].Cells[3].Value.ToString();
+            CostTb.Text = DiagList.SelectedRows[0].Cells[4].Value.ToString();
+            ResultTb.Text = DiagList.SelectedRows[0].Cells[5].Value.ToString();
+            if (CostTb.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(DiagList.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (Key ==0 )
+            {
+                MessageBox.Show("Missing Data!!!!");
+
+            }
+            else
+            {
+                string DDate = DiaDateTb.Value.Date.ToString();
+                int patient = Convert.ToInt32(PatientCb.SelectedValue.ToString());
+                int Test = Convert.ToInt32(TestCb.SelectedValue.ToString());
+                int Cost = Convert.ToInt32(CostTb.Text);
+                string Result = ResultTb.Text;
+
+                string Query = "Delete from Diagnosis where DiagCode='{0}'";
+                Query = string.Format(Query, Key);
+                Con.SetData(Query);
+                ShowDiagnosis();
+                Clear();
+                MessageBox.Show("Patient Deleted!!!");
+
+            }
+
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (PatientCb.SelectedIndex == -1 || CostTb.Text == "" || ResultTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!!!");
+
+            }
+            else
+            {
+                string DDate = DiaDateTb.Value.Date.ToString();
+                int patient = Convert.ToInt32(PatientCb.SelectedValue.ToString());
+                int Test = Convert.ToInt32(TestCb.SelectedValue.ToString());
+                int Cost = Convert.ToInt32(CostTb.Text);
+                string Result = ResultTb.Text;
+
+                string Query = "Update Diagnosis set DiagDate='{0}',Patient = '{1}', Test = '{2}', Cost = '{3}',Result = '{4}' Where DiagCode ={5}";
+                Query = string.Format(Query, DDate, patient, Test, Cost, Result, Key);
+                Con.SetData(Query);
+                ShowDiagnosis();
+                Clear();
+                MessageBox.Show("Patient Updated!!!");
+
+            }
 
         }
     }
