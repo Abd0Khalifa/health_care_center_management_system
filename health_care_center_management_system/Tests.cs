@@ -50,7 +50,67 @@ namespace health_care_center_management_system
                 Con.SetData(Query);
                 ShowTest();
                 Clear();
-                MessageBox.Show("Patient Added!!!");
+                MessageBox.Show("Test Added!!!");
+
+            }
+        }
+        int Key = 0;
+
+        private void TestList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TNameTb.Text = TestList.SelectedRows[0].Cells[1].Value.ToString();
+            TCostTb.Text = TestList.SelectedRows[0].Cells[2].Value.ToString();
+            
+            if (TNameTb.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(TestList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (TNameTb.Text == "" || TCostTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!!!");
+
+            }
+            else
+            {
+                string TName = TNameTb.Text;
+                int Cost = Convert.ToInt32(TCostTb.Text);
+
+                string Query = "Update TestTb1 set TestName ='{0}', TestCost= {1} Where TestCode {2} ";
+                Query = string.Format(Query, TName, Cost , Key);
+                Con.SetData(Query);
+                ShowTest();
+                Clear();
+                MessageBox.Show("Test Updated!!!");
+
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select a Test!!!!");
+
+            }
+            else
+            {
+                string TName = TNameTb.Text;
+                int Cost = Convert.ToInt32(TCostTb.Text);
+
+                string Query = "Delet From TestTb1 Where TestCode {0} ";
+                Query = string.Format(Query, Key);
+                Con.SetData(Query);
+                ShowTest();
+                Clear();
+                MessageBox.Show("Test Deleted!!!");
 
             }
         }
