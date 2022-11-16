@@ -306,6 +306,7 @@ namespace health_care_center_management_system
             this.PatientsList.ThemeStyle.RowsStyle.Height = 22;
             this.PatientsList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PatientsList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PatientsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatientsList_CellContentClick);
             // 
             // panel3
             // 
@@ -371,7 +372,7 @@ namespace health_care_center_management_system
             this.EditBtn.TabIndex = 17;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
-            this.EditBtn.Click += new System.EventHandler(this.button1_Click);
+            this.EditBtn.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label11
             // 
@@ -506,7 +507,7 @@ namespace health_care_center_management_system
             this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DOBTb.Location = new System.Drawing.Point(279, 75);
             this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DOBTb.MinDate = new System.DateTime(2022, 11, 16, 0, 0, 0, 0);
+            this.DOBTb.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.DOBTb.Name = "DOBTb";
             this.DOBTb.Size = new System.Drawing.Size(229, 36);
             this.DOBTb.TabIndex = 21;
